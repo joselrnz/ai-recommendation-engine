@@ -25,14 +25,6 @@ This project builds an **AI-powered personalized recommendation system** for an 
 ```
 ai-recommendation-engine/
 │── infrastructure/        # Terraform scripts for AWS setup
-│   ├── modules/          # Reusable Terraform modules
-│   │   ├── vpc/          # VPC, Subnets, IGW, NAT Gateway
-│   │   ├── eks/          # EKS Cluster setup
-│   │   ├── rds/          # RDS database setup
-│   │   ├── s3/           # S3 bucket configuration
-│   │   ├── api-gateway/  # API Gateway and Lambda integration
-│   │   ├── glue/         # AWS Glue ETL setup
-│   │   ├── personalize/  # Amazon Personalize setup
 │   ├── environments/     # Different environment configurations (dev, prod)
 │   ├── main.tf          # Root Terraform configuration
 │   ├── variables.tf     # Variable definitions
