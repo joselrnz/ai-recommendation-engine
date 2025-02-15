@@ -2,6 +2,7 @@ import boto3
 import sagemaker
 from sagemaker.amazon.amazon_estimator import image_uris
 
+
 # Initialize SageMaker session
 sagemaker_session = sagemaker.Session()
 role = "arn:aws:iam::123456789012:role/SageMakerRole"
@@ -27,3 +28,5 @@ estimator.fit({'train': s3_input_train})
 
 # Deploy model
 predictor = estimator.deploy(instance_type='ml.m5.large', initial_instance_count=1)
+
+
