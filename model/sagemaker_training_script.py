@@ -109,7 +109,7 @@ if __name__ == "__main__":
         model.train("s3://your-bucket/path/to/train-data/")
         predictor = model.deploy()
 
-        # ... use predictor ...
+  
         
     finally:
         # Cleanup resources
